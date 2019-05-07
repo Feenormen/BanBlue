@@ -13,7 +13,14 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      {
+        src: '/js/background-flower.js',
+        type: 'text/javascript',
+        charset: 'utf-8'
+      }
+    ]
   },
 
   /*
@@ -24,7 +31,10 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['element-ui/lib/theme-chalk/index.css'],
+  css: [
+    { src: 'element-ui/lib/theme-chalk/index.css' },
+    { src: 'normalize.css/normalize.css' }
+  ],
 
   /*
    ** Plugins to load before mounting the App
