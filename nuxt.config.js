@@ -29,14 +29,18 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '@/plugins/element-ui', ssr: false }],
+  plugins: [
+    { src: '@/plugins/element-ui', ssr: false },
+    { src: '@/plugins/axios', ssr: false }
+  ],
 
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
   /*
    ** Axios module configuration
