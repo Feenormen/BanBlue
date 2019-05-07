@@ -5,7 +5,18 @@
 </template>
 
 <script>
-export default {}
+export default {
+  mounted() {
+    this.$helpers.test('akm')
+  }
+}
 </script>
 
-<style></style>
+<style scoped>
+.container {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+</style>

@@ -13,7 +13,19 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: '/css/usually.css'
+      },
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: '/css/default-theme.css'
+      }
+    ],
     script: [
       {
         src: '/js/background-flower.js',
@@ -41,7 +53,8 @@ module.exports = {
    */
   plugins: [
     { src: '@/plugins/element-ui', ssr: false },
-    { src: '@/plugins/axios', ssr: false }
+    { src: '@/plugins/axios', ssr: false },
+    { src: '@/plugins/init-helpers', ssr: false }
   ],
 
   /*
@@ -64,11 +77,31 @@ module.exports = {
    */
   build: {
     transpile: [/^element-ui/],
-
+    postcss: [
+      require('autoprefixer')({
+        add: true
+      })
+    ],
+    // postcss: {
+    //   plugins: {
+    //     autoprefixer: {}
+    //   },
+    //   preset: {
+    //     // 更改postcss-preset-env 设置
+    //   }
+    // },
     /*
      ** You can extend webpack config here
      */
     extend(config, ctx) {
+      console.log(
+        `This is config from nuxt config's build's webpack's extend ===> ${config}`,
+        config
+      )
+      console.log(
+        `This is ctx from nuxt config's build's webpack's extend ===> ${ctx}`,
+        ctx
+      )
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
