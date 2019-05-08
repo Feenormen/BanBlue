@@ -77,31 +77,11 @@ module.exports = {
    */
   build: {
     transpile: [/^element-ui/],
-    postcss: [
-      require('autoprefixer')({
-        add: true
-      })
-    ],
-    // postcss: {
-    //   plugins: {
-    //     autoprefixer: {}
-    //   },
-    //   preset: {
-    //     // 更改postcss-preset-env 设置
-    //   }
-    // },
+    postcss: [require('autoprefixer')()],
     /*
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-      console.log(
-        `This is config from nuxt config's build's webpack's extend ===> ${config}`,
-        config
-      )
-      console.log(
-        `This is ctx from nuxt config's build's webpack's extend ===> ${ctx}`,
-        ctx
-      )
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
