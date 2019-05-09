@@ -70,6 +70,8 @@ module.exports = {
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    prefix: '/api/',
+    proxy: true
   },
 
   /*
@@ -77,7 +79,19 @@ module.exports = {
    */
   build: {
     transpile: [/^element-ui/],
-    postcss: [require('autoprefixer')()],
+    postcss: {
+      plugins: {
+        // 通过传递 false 来禁用插件
+        'autoprefixer': {},
+        'postcss-nested': {},
+        'postcss-responsive-type': {},
+        'postcss-hexrgba': {}
+      },
+      preset: {
+        // 更改postcss-preset-env 设置
+      }
+    },
+
     /*
      ** You can extend webpack config here
      */
