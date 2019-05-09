@@ -20,6 +20,7 @@ export default {
   height: 100vh;
   box-sizing: border-box;
   .akm {
+    color: $white;
   }
 }
 </style>
