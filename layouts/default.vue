@@ -1,7 +1,7 @@
 <template>
   <div class="warp ow-h pos-re">
     <div class="background-canvas pos-ab">
-      <canvas id="canvas" />
+      <canvas id="canvas" class="canvas" />
     </div>
     <nuxt />
   </div>

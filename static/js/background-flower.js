@@ -1,7 +1,9 @@
 window.onload = init
 
 function init() {
-  const canvas = document.getElementById('canvas') // 选择canvas标签
+  const canvas =
+    document.getElementById('canvas') ||
+    document.getElementsByClassName('canvas')[0] // 选择canvas标签
   const ctx = canvas.getContext('2d') // 设置绘画场景
   let width = (canvas.width = window.innerWidth) // 设置画布大小
   let height = (canvas.height = window.innerHeight) // 设置画布大小
