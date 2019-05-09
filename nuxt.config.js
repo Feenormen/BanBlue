@@ -83,7 +83,6 @@ module.exports = {
       plugins: {
         // 通过传递 false 来禁用插件
         'autoprefixer': {},
-        'postcss-nested': {},
         'postcss-responsive-type': {},
         'postcss-hexrgba': {}
       },
