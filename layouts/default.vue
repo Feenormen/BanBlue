@@ -1,11 +1,19 @@
 <template>
   <div class="warp ow-h pos-re">
     <div class="background-canvas pos-ab">
-      <canvas id="canvas" class="canvas" />
+      <canvas id="canvas" />
     </div>
     <nuxt />
   </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    this.$bginit.init()
+  }
+}
+</script>
 
 <style>
 html,

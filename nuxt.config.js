@@ -27,11 +27,11 @@ module.exports = {
       }
     ],
     script: [
-      {
-        src: '/js/background-flower.js',
-        type: 'text/javascript',
-        charset: 'utf-8'
-      }
+      // {
+      //   src: '/js/background-flower.js',
+      //   type: 'text/javascript',
+      //   charset: 'utf-8'
+      // }
     ]
   },
 
