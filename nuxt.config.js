@@ -75,11 +75,9 @@ module.exports = {
     prefix: '/api/',
     proxy: true
   },
-
   styleResources: {
     scss: './assets/css/var.scss'
   },
-
   /*
    ** Build configuration
    */
