@@ -82,12 +82,15 @@ module.exports = {
     postcss: {
       plugins: {
         // 通过传递 false 来禁用插件
-        'autoprefixer': {},
         'postcss-responsive-type': {},
-        'postcss-hexrgba': {}
+        'postcss-hexrgba': {},
+        'postcss-nested': {}
       },
       preset: {
         // 更改postcss-preset-env 设置
+        autoprefixer: {
+          browsers: ['> 1%', 'last 2 versions', 'not ie <= 8']
+        }
       }
     },
 
