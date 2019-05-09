@@ -14,17 +14,17 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        type: 'text/css',
-        href: '/css/usually.css'
-      },
-      {
-        rel: 'stylesheet',
-        type: 'text/css',
-        href: '/css/default-theme.css'
-      }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      // {
+      //   rel: 'stylesheet',
+      //   type: 'text/css',
+      //   href: '/css/usually.scss'
+      // },
+      // {
+      //   rel: 'stylesheet',
+      //   type: 'text/css',
+      //   href: '/css/default-theme.scss'
+      // }
     ],
     script: [
       // {
@@ -45,7 +45,8 @@ module.exports = {
    */
   css: [
     { src: 'element-ui/lib/theme-chalk/index.css' },
-    { src: 'normalize.css/normalize.css' }
+    { src: 'normalize.css/normalize.css' },
+    { src: '~assets/css/index.scss' }
   ],
 
   /*
@@ -63,7 +64,8 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/proxy'
+    '@nuxtjs/proxy',
+    'nuxt-sass-resources-loader'
   ],
   /*
    ** Axios module configuration
@@ -73,6 +75,8 @@ module.exports = {
     prefix: '/api/',
     proxy: true
   },
+
+  sassResources: ['~assets/css/index.scss'],
 
   /*
    ** Build configuration

@@ -1,6 +1,8 @@
 <template>
-  <div class="container">
-    111
+  <div class="container d-flex-al-bt-wp">
+    <div class="akm">
+      1111
+    </div>
   </div>
 </template>
 
@@ -12,11 +14,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .container {
+  width: 100vw;
+  height: 100vh;
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  .akm {
+  }
 }
 </style>
