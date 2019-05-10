@@ -1,6 +1,6 @@
 <template>
   <div class="container d-flex-al-bt-wp">
-    <div class="akm">
+    <div class="akm" style="color:red;">
       1111
     </div>
   </div>

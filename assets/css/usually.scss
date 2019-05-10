@@ -50,16 +50,16 @@
 }
 
 /*盒模型*/
-.dp-b {
+.db {
   display: block;
 }
-.dp-i {
+.di {
   display: inline;
 }
-.dp-ib {
+.dib {
   display: inline-block;
 }
-.dp-n {
+.dn {
   display: none;
 }
 .bz-b {
@@ -70,57 +70,57 @@
 }
 
 /*flex布局*/
-.d-flex {
+.df {
   display: flex;
 }
-.d-flex-al {
+.df-al {
   display: flex;
   align-content: center;
 }
-.d-flex-bt {
+.df-bt {
    display: flex;
    justify-content: space-between;
  }
-.d-flex-ar {
+.df-ar {
   display: flex;
   justify-content: space-around;
 }
-.d-flex-ed {
+.df-ed {
   display: flex;
   justify-content: flex-end;
 }
-.d-flex-wp {
+.df-wp {
   display: flex;
   flex-wrap: wrap;
 }
-.d-flex-al-bt {
+.df-al-bt {
   display: flex;
   justify-content: space-between;
   align-content: center;
 }
-.d-flex-al-ar {
+.df-al-ar {
   display: flex;
   justify-content: space-around;
   align-content: center;
 }
-.d-flex-al-ed {
+.df-al-ed {
   display: flex;
   justify-content: flex-end;
   align-content: center;
 }
-.d-flex-al-bt-wp {
+.df-al-bt-wp {
   display: flex;
   justify-content: space-between;
   align-content: center;
   flex-wrap: wrap;
 }
-.d-flex-al-ar-wp {
+.df-al-ar-wp {
   display: flex;
   justify-content: space-around;
   align-content: center;
   flex-wrap: wrap;
 }
-.d-flex-al-ed-wp {
+.df-al-ed-wp {
   display: flex;
   justify-content: flex-end;
   align-content: center;

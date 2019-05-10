@@ -7,8 +7,8 @@ class BackgroundFlower {
     const particles = [] // 设置装礼花的数组
     const colors = ['#029DAF', '#E5D599', '#FFC219', '#F07C19', '#E32551'] // 礼花的所有会出现的颜色
     const gravity = 0.04 // 重力加速度
-    let shux = 0 // 横向速度
-    let shuy = 0 // 纵向速度
+    let shux = 0 // 初始X轴
+    let shuy = 0 // 初始Y轴
 
     // 设置时间延迟的同时创建200个礼花
     function initParticles() {
