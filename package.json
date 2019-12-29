@@ -30,11 +30,13 @@
     "postcss-nested": "^4.1.0",
     "postcss-responsive-type": "^1.0.0",
     "uuid": "^3.3.2",
-    "vuex": "^3.0.1"
-  },
-  "devDependencies": {
+    "vuex": "^3.0.1",
     "@nuxtjs/eslint-config": "^0.0.1",
     "@nuxtjs/style-resources": "^0.1.2",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0"
+  },
+  "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.1",
     "eslint-config-prettier": "^4.1.0",
@@ -48,9 +50,8 @@
     "eslint-plugin-promise": ">=4.0.1",
     "eslint-plugin-standard": ">=4.0.0",
     "eslint-plugin-vue": "^5.2.2",
-    "node-sass": "^4.11.0",
+
     "nodemon": "^1.18.9",
-    "prettier": "^1.16.4",
-    "sass-loader": "^7.1.0"
+    "prettier": "^1.16.4"
   }
 }

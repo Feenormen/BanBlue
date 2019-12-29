@@ -1,7 +1,10 @@
 <template>
   <div class="container d-flex-al-bt-wp">
     <div class="akm" style="color:red;">
-      1111
+      building
+    </div>
+    <div class="icp">
+      <a href="http://beian.miit.gov.cn">粤ICP备18015369号</a>
     </div>
   </div>
 </template>
@@ -21,6 +24,15 @@ export default {
   box-sizing: border-box;
   .akm {
     color: $deep_yellow;
+  }
+  .icp {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99999999;
+    width: 100vw;
+    text-align: center;
+    color: white;
   }
 }
 </style>
